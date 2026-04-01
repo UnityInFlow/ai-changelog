@@ -1,4 +1,4 @@
-import simpleGit from "simple-git";
+import { simpleGit } from "simple-git";
 import { ChangeEntry } from "./types.js";
 import { parseConventionalCommit } from "./parsers/commit.js";
 

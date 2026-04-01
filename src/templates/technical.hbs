@@ -1,0 +1,24 @@
+## {{version}} — {{date}}
+
+{{#each groups}}
+### {{label}}
+{{#each entries}}
+- `{{type}}{{#if scope}}({{scope}}){{/if}}`: {{description}} ({{hash}})
+{{/each}}
+{{#if gsdSummary}}
+
+**Decisions:** {{#each gsdSummary.decisions}}
+- {{this}}
+{{/each}}
+**Files changed:** {{#each gsdSummary.filesChanged}}
+- `{{this}}`
+{{/each}}
+{{/if}}
+{{/each}}
+
+{{#if (hasItems breaking)}}
+### Breaking Changes
+{{#each breaking}}
+- `{{type}}`: {{description}} ({{hash}})
+{{/each}}
+{{/if}}

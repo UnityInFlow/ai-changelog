@@ -1,0 +1,29 @@
+## {{version}} — {{date}}
+
+{{#each groups}}
+### {{label}}
+
+{{#if gsdSummary}}
+#### New Features
+{{#each gsdSummary.whatWasBuilt}}- {{this}}
+{{/each}}
+{{else}}
+{{#each entries}}
+{{#if (eq type "feat")}}- {{description}}
+{{/if}}{{/each}}
+{{/if}}
+
+{{#if (hasItems (filterByType entries "fix"))}}
+#### Bug Fixes
+{{#each entries}}
+{{#if (eq type "fix")}}- {{description}}
+{{/if}}{{/each}}
+{{/if}}
+{{/each}}
+
+{{#if (hasItems breaking)}}
+### Breaking Changes
+{{#each breaking}}
+- {{description}}
+{{/each}}
+{{/if}}
