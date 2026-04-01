@@ -1,0 +1,10 @@
+{
+  "groupBy": "phase",
+  "formats": ["product"],
+  "output": "RELEASES.md",
+  "github": {
+    "repo": "UnityInFlow/example",
+    "createRelease": true
+  },
+  "gsdDir": ".planning"
+}
