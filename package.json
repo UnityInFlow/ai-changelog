@@ -1,6 +1,6 @@
 {
   "name": "@unityinflow/ai-changelog",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "AI-aware changelog generator — product and technical changelogs from agent commits and GSD planning files",
   "type": "module",
   "main": "./dist/index.js",
