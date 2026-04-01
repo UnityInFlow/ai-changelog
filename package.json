@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
+    "execa": "^9.6.1",
     "prettier": "^3.8.1",
     "tsup": "^8.5.1",
     "typescript": "^6.0.2",
