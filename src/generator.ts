@@ -1,6 +1,6 @@
 import Handlebars from "handlebars";
 import { readFileSync } from "node:fs";
-import { ChangeEntry, ChangelogOutput } from "./types.js";
+import { ChangelogOutput } from "./types.js";
 
 // --- Handlebars helpers ---
 
