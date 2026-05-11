@@ -82,6 +82,20 @@ Superpowers skills (TDD, code review, debugging) activate automatically during e
 - `@octokit/rest` — GitHub Releases API
 - `commander` — CLI framework
 
+---
+
+## CI / Self-Hosted Runners
+
+Use UnityInFlow org-level self-hosted runners. Never use `ubuntu-latest`.
+
+```yaml
+runs-on: [arc-runner-unityinflow]
+```
+
+Available runners: `hetzner-runner-1/2/3` (X64), `orangepi-runner` (ARM64).
+
+---
+
 ## Do Not
 
 - Do not start implementation until spec-linter v0.0.1 is published on npm
